@@ -1,0 +1,18 @@
+Program 1:
+Write a program that accepts a string as an input and prints the ascii values of each character as the output.
+Append the string with it’s ascii values and print the new string.
+Eg Input - “CAR”
+Output-  67 65 82  
+“The new String is : C67A65R82”
+Have students determine their name in ASCII
+
+
+
+
+
+Program 2:
+Write a program that accepts a line/ sentence as input and prints the lines after making all characters in the sentence capitalized.
+Hint: Use ord and ASCII table.
+chr(ord(‘a’)-32) = A
+
+

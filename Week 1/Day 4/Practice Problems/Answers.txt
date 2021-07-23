@@ -1,0 +1,46 @@
+#Answer to Problem 1: 
+
+def convASCII(text):
+    result = []
+    for char in text:
+        result.append(str(ord(char)))
+    print(' '.join(result))
+    new_str = []
+    for i in range(len(result)):
+        char = text[i] + str(result[i])
+        new_str.append(char)
+    print("Your new string is",''.join(new_str))
+
+def newconvASCII(text):
+    ASCIIval = ""
+    newtext = ""
+    for char in text:
+        newtext = newtext + char
+        newtext = newtext + str(ord(char))
+        ASCIIval = ASCIIval + str(ord(char)) + " "
+    print(ASCIIval)
+    print(newtext)
+
+
+#Answer to Problem 2
+
+def capitalize(sentence):
+    new_str = []
+    for char in sentence:
+        if ord(char) > 96 and ord(char) < 123:
+            new_str.append(chr(ord(char)-32))
+        else:
+            new_str.append(char)
+    print(''.join(new_str))
+
+def newCapitalize(sentence):
+    new_str = ""
+    for char in sentence:
+        if ord(char) > 96 and ord(char) < 123:
+            new_str = new_str + chr(ord(char)-32)
+        else:
+            new_str = new_str + char
+    print(new_str)
+
+
+

@@ -1,0 +1,33 @@
+body{
+	background-image: url("background3.jpg");
+}
+img{
+	margin: 10px;
+	width: 300px;
+	height: 400px;
+	transition: all 1s;
+}
+
+img:hover{
+	transform: scale(1.05);
+
+}
+
+h1{	
+	font-family: 'Ranchers', cursive;
+	font-size: 300%;
+	color: white;
+	width: 350px;
+	border-bottom: 2px solid rgba(209, 202, 237,0.5);
+	border-right: 2px solid rgba(209, 202, 237,0.5);
+	border-left: 2px solid rgba(209, 202, 237,0.5);
+}
+
+p{
+	padding: 10px;
+	width: 600px;
+	color: white;
+	font-family: 'Fjalla One', sans-serif;;
+	font-size: 20px;
+	background-color: rgba(209, 202, 237,0.5);
+}

@@ -1,0 +1,27 @@
+Problem 1:Enter the score of a student. ( Use of elif and if- else)
+If the student gets a score of 92-100 - Print - ‘Grade A excellent work !’
+If the score is between -83-91- Print- “ Grade B+, Good Job !”
+If the score is between - 70-82- Print- “Grade B, Fair Job !”
+Else just print - “Need to work harder next time”
+			
+
+
+Problem 2:
+Number guessing 
+Make a student guess a number and ask another student to run his/her
+program and try to guess the number. If the number is higher, the programs says “Too high”, if it is lower, then it says “Too low”
+
+
+
+Problem 3:
+Check if the number is in this range 1000-3000(inclusive) , 
+If it is in that range, check that it should be a multiple of 5 but not a multiple of 3. If it satisfies both the conditions, print the factors of the number. 
+If the number is in the range but not following the factor condition, just print number.
+If the number is not in the range and not even following the factor condition, print error and ask user to enter the number again.
+
+
+
+
+Problem 4: Input a 4 digit number and check if every digit of the number is even or not. If every digit is even, return with the message saying “All are even”. Else print a message - “ Nope, not all digits are even! ” 
+Option A - Input must be kept as a string for this to work. 
+

@@ -1,0 +1,65 @@
+#Answer to Problem 1: 
+
+grade = int(input("Please enter your grade "))
+print(grade)
+
+if (grade >= 92 and grade<= 100):
+	print("Grade A excellent work!")
+
+elif (grade>= 83 and grade<= 91):
+	print("Grade B+, good job")
+
+elif (grade >= 70 and grade <= 82):
+	print("Grade B, fair job")
+
+else:
+	print("Need to work harder next time") 
+
+
+#Answer to Problem 2
+
+guess = int(input("Please enter a number "))
+
+answer = 90
+
+if guess > answer:
+	print("Too high")
+    
+elif guess <  answer:
+	print("Too low")
+   
+else:
+	print("You got it!")
+
+
+#Answer to Problem 3
+
+guess = int(input("Enter a number!"))
+
+if (guess >= 1000 and guess <= 3000):
+    if ((guess % 5 == 0)  and (guess % 3 != 0)):
+        print("Good Input")
+        
+    else:
+        print("I'm confused")
+        
+else:
+    print("Error! Shutting down")
+
+
+#Answer to Problem 4:
+
+number =input("Enter a number: ")
+even=0
+odd=0
+for i in number:
+	if (int(i)%2==0):
+		even+=1
+	else:
+		odd+=1
+if(even==4):
+	print("All are even")
+elif(odd==4):
+	print("All are odd")
+else:
+	print("Nope, not all digits are even!")

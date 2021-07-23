@@ -1,0 +1,29 @@
+##Answer to Problem 1: 
+
+Sample output= 3, bob
+string = "Flnbobtklbobstmbob"
+print(string.count('bob'))
+#print("will print out", string.count('bob'),"bob") 
+
+
+#Answer to Problem 2
+
+string=input("enter a string: ")
+print("Reversed String is ", string[::-1])
+
+
+#Answer to Problem 3
+
+number= input("Enter a number: ")
+sum=0
+for char in number:
+	sum+=int(char)
+print("The sum of digits of the number is", sum)
+
+
+#Answer to Problem 4:
+
+name=input("Enter name: ")
+for char in name:
+    if char=='a' or char=='e' or char=='i' or char=='o'or char=='u':
+        print(char)

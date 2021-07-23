@@ -1,0 +1,20 @@
+Problem 1:  Enter the string say- “Flnbobtklbobstmbob”
+ 	    Print the number of times the substring “bob” appears in the main string
+            and also print bob along with it.
+
+
+
+Problem 2:  Reverse a string using python indexing. 
+Hint: (negative indices can be used)
+
+
+Problem 3: 
+Enter a 4 digit number 
+Calculate the sum of all the digits of that number.
+Eg - Input : 1234 , Output- 10
+
+
+Problem 4: Enter a string and print only the vowels :
+Entered String: “Titash”
+Output -  a  i  
+
