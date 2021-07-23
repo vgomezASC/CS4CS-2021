@@ -1,0 +1,185 @@
+Delivered-To: earthisgone99@gmail.com
+Received: by 2002:ac9:5f89:0:0:0:0:0 with SMTP id h9csp655996ocv;
+        Wed, 15 Jun 2021 06:23:22 -0700 (PDT)
+X-Received: by 2002:adf:cd0f:: with SMTP id w15mr14928751wrm.414.1625059402674;
+        Wed, 15 Jun 2021 06:23:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1625059402; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HAO/y8xra5MEQv7TJ3hf2+pmOyQnn7MDezd4DodDoqDy4bGHp2pqbTOCJTYvb76pjy
+         nkQXaBKIvqTk2rwy9x2laQnN9iUf9xOA5P3oqBb5WShNHkP1mNZgCtHzAwIyYHiyEfOI
+         o731JD6t29NP/QuBEnvZwwGI1BGj4Lj2RUkjkvUbVbQd4YbPhm65XIdAD63GoVQkrOvp
+         WDLhgO60QI6T3Q+T/Q88JJk6k+B8B7R0de8fmcmL6NgldhziZBiVj8PmXAnbGuvbPS2U
+         tUdXIrTLHaZtTbhPstUBle6vh/36sxI9vYumygUWpMToQmSDUjgDAjZPJ1k2gsfBsVQi
+         q/Jw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=zk9IQS63MHiz7aiBBUtmlWOh1j9z59EFE9msSqVFFDk=;
+        b=A5ErPDqUVaaBWUCO0Htj/zC1UW0k6+EAcGGn7djy05RKA+fuAVm7KZvBL4I7eRAkgc
+         GW24mAo5vNa+JfF4zQT/0E5vqUmc0FZ56k2vIDpRC+faNWG/78kVTEYM+hr4/NXKy+/Y
+         McWSlFm7ys/kkwDHH31egxgxTwuAu5PE+pKfiGJtimCWNzrGGn60wAWM0Q0fem3kS4r/
+         BZ7gAR+rzyIKXCYGTNeZwXHidAibb2PJnXfjWYa4AsAssEvEgPGPzRWopxYJPDvu57y+
+         OFnRCLeOYfAa7LJmiSD+pA8pPX655GWloEyRTVsjPAbshCtXvwGEk2ZIMqAcKOpcvMYB
+         Cpgg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=jX18+CTi;
+       spf=pass (google.com: domain of bob.builder6281@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=bob.builder6281@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <bob.builder6281@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id y8sor5444682wro.63.2021.06.30.06.23.22
+        for <earthisgone99@gmail.com>
+        (Google Transport Security);
+        Wed, 30 Jun 2021 06:23:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bob.builder6281@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=jX18+CTi;
+       spf=pass (google.com: domain of bob.builder6281@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=bob.builder6281@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=zk9IQS63MHiz7aiBBUtmlWOh1j9z59EFE9msSqVFFDk=;
+        b=jX18+CTiLgztuMAx5Lz5heADKaVltNL1wfz6+VhsLJNjp7Z9DEEFx6TUz+HWoVRXIR
+         J9nGH45iJ4IuvHQedYMuD6zDw5Qn3Q96WvjErbwa/Q4RmK2TC/POAxke/7m5zhut8fFA
+         kGHWVyqRNCKOdJ5wUvLVv8GtvWJj8b+eVZtkkcVFWjLurAGNLsUEPfEkSR6dLO2B5rpW
+         WDxS2pXtMWrqVgYUo5oT4DLSHQhv80BV1nnhhzw+2MQ8bhxCd+Kr/C11GDrx/Fdf1PFl
+         OFp+UVuCNOPDnI7dW7dNpJ5iauycVyr2A4mfvKSQoWZk8saJ9yja0E1Gtz8AfPryUVO/
+         TY3Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=zk9IQS63MHiz7aiBBUtmlWOh1j9z59EFE9msSqVFFDk=;
+        b=c5caLmrjImEPlkmBK5Ig3bhRIds1XstM8QIKdKvl3ekiceAnRe6jHn7mgp3MgQ492B
+         QD/kN441A7uwy4f8I+hzvDEkBKJaS7/TD9MgweSmlOsool36uSfPtU8j+ijNigtqH5mH
+         m3R2fQkALalvhqzUwZY5ECInEAEleTekWmU6NwOZElAR15sR6swLmDDVEc1fcwSPr/m7
+         GoNt0olinj1AnyqTtrskV9ROmo4GMnJtocdlJuZRcSuw//q66YVo8SblZJ+1oxohCPME
+         YwpbP0EFwnQuR+BYxTyvtEeo0Dhbc+nXo+Sreb+FV68rwbYG+Tb3o2qL15KOuNK7FoeC
+         swjw==
+X-Gm-Message-State: AOAM5336fEEelHSm0YoeonBCoNWVFWLHoPCyp8rlNIj4sOT+hfX/HKcS
+	rhSGgCZN31be//VT4vngMKhWfCZaMiswLxtAyGa58DjpQ/s=
+X-Google-Smtp-Source: ABdhPJzHWbCVnJxgrmMnM4f7O/QorvA0/VF++6p5F7eu66q+Tpl49dNzev5IZ7dzvD0rKiXjc0/E5bn+HxlQQGnouPs=
+X-Received: by 2002:adf:fc47:: with SMTP id e7mr5467531wrs.284.1625059402319;
+ Wed, 15 Jun 2021 06:23:22 -0700 (PDT)
+MIME-Version: 1.0
+References: <CADuQA+t8b2cibkuymmTCsN0ROEOct-Hsqa3u41+mpY_wvdVUTQ@mail.gmail.com>
+ <CA+GoSwTwbhGYuxt+x_bTWi2H50yabQy=MXJ7UsQh=vXPzOes1Q@mail.gmail.com>
+ <CADuQA+vXG0wC32Bzow3hucR3_VR9uC6uAA4EdB4n9xh=jvnBAw@mail.gmail.com> <CA+GoSwTH5QqZ47EFHK318kbeFyM+MUj_1nnwzK0L5UyGmzPnqw@mail.gmail.com>
+In-Reply-To: <CA+GoSwTH5QqZ47EFHK318kbeFyM+MUj_1nnwzK0L5UyGmzPnqw@mail.gmail.com>
+From: Hogan Paulie <bob.builder6281@gmail.com>
+Date: Wed, 15 Jun 2021 09:23:11 -0400
+Message-ID: <CADuQA+u7RCVZ=rZVYaOry5cyu3Pu7F_MF8TiVgOPwd+hJ-Z39g@mail.gmail.com>
+Subject: Re: Apology
+To:Pelon Husk <earthisgone99@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000006a0b2905c5fba091"
+
+--0000000000006a0b2905c5fba091
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+You got it Pelon, I=E2=80=99ll draft something up as soon as I get back hom=
+e!!
+
+On Wed, Jun 15, 2021 at 9:22 AM Pelon Husk <earthisgone99@gmail.co=
+m>
+wrote:
+
+>
+> Well if you insist...It would be awesome if you spread the news about the
+> launch in one of your vlogs or other media platforms. I=E2=80=99d love fo=
+r the
+> youth to watch the launch as my team makes history!
+>
+> On Wed, Jun 15, 2021 at 9:21 AM Hogan Paulie <bob.builder6281@gmail.com>
+> wrote:
+>
+>> No no, I genuinely want to help with the launch, it's the least I can do
+>> after that conversation with Blake. How can I help you?
+>>
+>> On Wed, Jun 15, 2021 at 9:20 AM Pelon Husk <
+>> earthisgone99@gmail.com> wrote:
+>>
+>>> Hi Hogan,
+>>>
+>>> No worries Hogan, I really appreciate you reaching out to me. I
+>>> understand some people may not always be as enthusiastic as me when it
+>>> comes to the Space launch, haha! The launch is happening next week, but=
+ I
+>>> really don=E2=80=99t want to seem like a bother to you.
+>>>
+>>>
+>>> ~Pelon
+>>>
+>>> On Wed, Jun 15, 2021 at 9:19 AM Hogan Paulie <bob.builder6281@gmail.com=
+>
+>>> wrote:
+>>>
+>>>> Hey Pelon,
+>>>>
+>>>> Blake was just telling me about the conversation you two had recently
+>>>> and I wanted to reach out to apologize. My brother can get a bit out o=
+f
+>>>> hand sometimes when it comes to his crypto drops. I=E2=80=99m willing =
+to make up
+>>>> for his harsh words and help however I can. When is the Space launch
+>>>> happening again?
+>>>>
+>>>>
+>>>> ~Hogan
+>>>>
+>>>>
+
+--0000000000006a0b2905c5fba091
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br class=3D"gmail-Apple-interchange-newline">You got it P=
+elon, I=E2=80=99ll draft something up as soon as I get back home!!<br></div=
+><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On We=
+d, Jun 30, 2021 at 9:22 AM Pelon Husk &lt;<a href=3D"mailto:earthi=
+sgone99@gmail.com">earthisgone99@gmail.com</a>&gt; wrote:<br></div><blockqu=
+ote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px=
+ solid rgb(204,204,204);padding-left:1ex"><div dir=3D"ltr"><br>Well if you =
+insist...It would be awesome if you spread the news about the launch in one=
+ of your vlogs or other media platforms. I=E2=80=99d love for the youth to =
+watch the launch as my team makes history!<br></div><br><div class=3D"gmail=
+_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Wed, Jun 30, 2021 at 9:21 =
+AM Hogan Paulie &lt;<a href=3D"mailto:bob.builder6281@gmail.com" target=3D"=
+_blank">bob.builder6281@gmail.com</a>&gt; wrote:<br></div><blockquote class=
+=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rg=
+b(204,204,204);padding-left:1ex"><div dir=3D"ltr">No no, I genuinely want t=
+o help with the launch, it&#39;s the least I can do after that conversation=
+ with Blake. How can I help you?<br></div><br><div class=3D"gmail_quote"><d=
+iv dir=3D"ltr" class=3D"gmail_attr">On Wed, Jun 30, 2021 at 9:20 AM Pelon Husk
+&lt;<a href=3D"mailto:earthisgone99@gmail.com" target=3D"_blan=
+k">earthisgone99@gmail.com</a>&gt; wrote:<br></div><blockquote class=3D"gma=
+il_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,2=
+04,204);padding-left:1ex"><div dir=3D"ltr"><p style=3D"margin:0px;font-stre=
+tch:normal;line-height:normal">Hi Hogan,=C2=A0</p><p style=3D"margin:0px;fo=
+nt-stretch:normal;line-height:normal">No worries Hogan, I really appreciate=
+ you reaching out to me. I understand some people may not always be as enth=
+usiastic as me when it comes to the Space launch, haha! The launch is happe=
+ning next week, but I really don=E2=80=99t want to seem like a bother to yo=
+u.</p><p style=3D"margin:0px;font-stretch:normal;line-height:normal"><br></=
+p><p style=3D"margin:0px;font-stretch:normal;line-height:normal">~Pelon</p>=
+</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">=
+On Wed, Jun 30, 2021 at 9:19 AM Hogan Paulie &lt;<a href=3D"mailto:bob.buil=
+der6281@gmail.com" target=3D"_blank">bob.builder6281@gmail.com</a>&gt; wrot=
+e:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0=
+.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex"><div dir=3D"l=
+tr"><p style=3D"margin:0px;font-stretch:normal;line-height:normal">Hey Pelo=
+n,=C2=A0</p><p style=3D"margin:0px;font-stretch:normal;line-height:normal">=
+Blake was just telling me about the conversation you two had recently and I=
+ wanted to reach out to apologize. My brother can get a bit out of hand som=
+etimes when it comes to his crypto drops. I=E2=80=99m willing to make up fo=
+r his harsh words and help however I can. When is the Space launch happenin=
+g again?</p><p style=3D"margin:0px;font-stretch:normal;line-height:normal">=
+<br></p><p style=3D"margin:0px;font-stretch:normal;line-height:normal">~Hog=
+an</p><br></div>
+</blockquote></div>
+</blockquote></div>
+</blockquote></div>
+</blockquote></div>
+
+--0000000000006a0b2905c5fba091--
