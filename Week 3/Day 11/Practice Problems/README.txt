@@ -1,0 +1,1 @@
+Check speaker notes of PowerPoint presentations.
