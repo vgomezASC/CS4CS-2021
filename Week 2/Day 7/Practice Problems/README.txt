@@ -1,1 +1,1 @@
-Check speaker notes of PowerPoint presentations
+Check speaker notes and Google Drive links of PowerPoint presentation.
